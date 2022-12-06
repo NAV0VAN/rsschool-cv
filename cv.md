@@ -1,8 +1,41 @@
-Имя и фамилия
-Контакты для связи
-Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
-Навыки (языки программирования, фреймворки, методологии, системы контроля версий и инструменты разработки, которыми вы владеете)
-Примеры кода
-Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и ссылками на исходный код.
-Образование (включая пройденные курсы и тренинги)
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+
+## Name
+Alexey Neuymin
+## Contacts for communication
+a.neuymin@mail.ru
+## About Me
+I am a curious person interested in programming
+## Skills
+JavaScript, Node.js, HTML, CSS, Bootstrap
+## Code examples
+```
+const copy = async () => {
+    try {
+        if (existsSync(folderNameTo)) {
+            throw new Error("FS operation failed (existsSync())")
+        }
+        mkdir(folderNameTo, { recursive: false }).catch((err) => {
+            throw new Error('FS operation failed (mkdir())');
+        }
+        );
+        const files = await readdir(folderNameFrom).catch((err) => {
+            throw new Error('ERROR readdtr');
+        })
+        for (const file of files) {
+          ...
+            }
+            );
+        }
+    } catch (error) {
+        console.error(error)
+    }
+};
+
+await copy();
+```
+## Work experience
+No work experience
+## Education
+High school and university
+## English language level
+А1. Breakthrough or beginner
