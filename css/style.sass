@@ -1,0 +1,99 @@
+html
+  scroll-behavior: smooth
+
+body
+  font-family: "Roboto", sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 20px
+  color: #000000
+
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+a[href^="tel:"],a[href^="mailto:"]
+  padding: 19px
+  font-size: 14px
+  line-height: 32px
+  text-decoration: none
+  color: #ffffff
+
+h1, h3
+  line-height: 1.5rem
+
+
+.container
+  position: relative
+  max-width: 1200px
+  margin: 0 auto
+  @media only screen and (min-width: 971px) and (max-width: 1200px)
+    max-width: 970px
+  @media only screen and (min-width: 769px) and (max-width: 992px)
+    max-width: 768px
+  @media only screen and (min-width: 576px) and (max-width: 767px)
+    max-width: none
+
+.header
+  background: #054276
+  margin: 0 auto
+  .menu
+    position: relative
+    .menu__body
+      position: relative
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 85%
+      height: 50px
+      left: 100px
+      font-size: 12px
+      .menu__link
+        width: 100px
+        height: 20px
+        text-align: center
+        :hover
+          font-weight: 700
+        a
+          color: #ffffff
+
+.main-body
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  top: 2px
+  min-height: 300px
+  .main-body__aside
+    width: 33.33%
+    min-height: 300px
+    background: #054276
+    color: #ffffff
+    .aside__title
+      height: 30px
+      background: #08345d
+      font-weight: 700
+      font-size: 14px
+      text-align: center
+      padding: 6px
+      margin-bottom: 10px
+    .contacts, .skills
+      position: relative
+      height: 150px
+      .contacts__item, .skills__item
+        height: 30px
+        margin: 0px 15px
+        display: flex
+        align-items: center
+        progress
+          position: absolute
+          width: 100px
+          left: 100px
+          margin: 0 15px
+
+.main-body__container
+  padding: 20px
+  li .title-section__li
+    list-style: disc

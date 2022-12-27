@@ -1,115 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta
-                  name="viewport"
-                  content="width=device-width, initial-scale=1.0"
-            />
-            <title>rsschool-cv-html</title>
-            <link rel="stylesheet" href="style.css" />
-            <link rel="icon" href="assets/favicon.ico" />
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link
-                  rel="preconnect"
-                  href="https://fonts.gstatic.com"
-                  crossorigin
-            />
-            <link
-                  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-                  rel="stylesheet"
-            />
-      </head>
 
-      <body>
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>rsschool-cv-html</title>
+      <link rel="stylesheet" href="../rsschool-cv/css/style.min.css" />
+      <link rel="icon" href="assets/favicon.ico" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/dac2152b80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <div class="container">
             <header class="header">
-                  <div class="container">
-                        <nav class="nav">
-                              <ul class="nav-list">
-                                    <li class="nav-item">
-                                          <a href="#contacts" class="nav-link"
-                                                >Contacts</a
-                                          >
-                                    </li>
-                                    <li class="nav-item">
-                                          <a href="#about-me" class="nav-link"
-                                                >About me</a
-                                          >
-                                    </li>
-                                    <li class="nav-item">
-                                          <a href="#skills" class="nav-link"
-                                                >Skills</a
-                                          >
-                                    </li>
-                                    <li class="nav-item">
-                                          <a href="#code" class="nav-link"
-                                                >Code</a
-                                          >
-                                    </li>
-                                    <li class="nav-item">
-                                          <a href="#work" class="nav-link"
-                                                >Work experience</a
-                                          >
-                                    </li>
-                                    <li class="nav-item">
-                                          <a href="#education" class="nav-link"
-                                                >Education</a
-                                          >
-                                    </li>
-                                    <li class="nav-item">
-                                          <a href="#english" class="nav-link"
-                                                >English</a
-                                          >
-                                    </li>
-                              </ul>
+                  <div class="menu">
+                        <nav class="menu__body">
+                              <div class="menu__link "> <a href="https://github.com/NAV0VAN">Git: NAV0VAN</a></div>
+                              <div class="menu__link "> <a href="https://work-in.ru/">App: WORK-IN.RU</a></div>
+                              <div class="menu__link "> <a href="#">Resume</a></div>
+                              <div class="menu__link "> <a href="https://flagman.top">Site: flagman.top</a></div>
                         </nav>
                   </div>
             </header>
+            <main class="main-body">
+                  <div class="main-body__aside">
+                        <div class="contacts">
+                              <div class="aside__title">КОНТАКТЫ</div>
+                              <div class="contacts__item"><i class="fa-solid fa-phone"></i><a
+                                          href="tel: +79193111274">+7
+                                          (919) 311-12-74</a></div>
+                              <div class="contacts__item"><i class="fa-solid fa-envelope"></i></i><a
+                                          href="mailto: a.neuymin@mail.ru">a.neuymin@mail.ru</a></div>
+                        </div>
+                        <div class="skills">
+                              <div class="aside__title">НАВЫКИ</div>
+                              <div class="skills__item"><label for="file">JavaScript:</label>
+                                    <progress id="file" max="100" value="30"></progress>
+                              </div>
+                              <div class="skills__item"><label for="file">NodeJS:</label> <progress id="file" max="100"
+                                          value="30"></progress>
+                              </div>
+                              <div class="skills__item"><label for="file">HTML, CSS:</label>
+                                    <progress id="file" max="100" value="30"></progress>
+                              </div>
+                              <div class="skills__item"><label for="file">Figma:</label>
+                                    <progress id="file" max="100" value="30"></progress>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="main-body__container">
+                        <div class="title-section">
+                              <div class="title-section__title">
+                                    <h1>Алексей Неуймин</h1>
+                              </div>
+                              <div class="title-section__position"><h3>программист<br>(junior frontend / backend developer)</h3></div>
+                              <div class="title-section___pet"><h4>PET-проекты:</h4>
+                              <ol class="title-section__ol">
+                                    <li class="title-section__li">учебная верстка сайта из шаблона Figma (<a href="#">проект Plants)</a>;</li>
+                                    <li class="title-section__li">веб-приложение <a href="https://work-in.ru/">WORK-IN.RU</a> на стеке: 
+                                          <ul class="title-section__ul">
+                                                <li class="title-section__li">frontend: Bootstrap + Sass</li>
+                                                <li class="title-section__li">backend: NodeJS + Express + MySQL</li>
+                                                <li class="title-section__li">сборка: Webpack</li>
+                                          </ul>
+                                          </li>
+                              </ol></div>
+                        </div>
+                        <div class="work-section">
+                              <div class="web-work"></div>
+                              <div class="node-work"></div>
+                        </div>
+                  </div>
+            </main>
+
+
             <main class="'main">
                   <div class="container main-container profile">
                         <section class="section-main-profile" id="profile">
                               <div class="img-profile">
-                                    <object
-                                          type="image/svg+xml"
-                                          data="./assets/profile-img.svg"
-                                          height="100px"
-                                          alt="Alexey Neuymin"
-                                    ></object>
+
                               </div>
-                              <div class="title-profile"><h1>Alexey Neuymin</h1></div>
+
                         </section>
                   </div>
                   <div class="container main-container">
-                        <section class="section-main-container" id="contacts"><hr>
+                        <section class="section-main-container" id="contacts">
+                              <hr>
                               <h2>Contacts for communication</h2>
                               <p><a href=mailto:a.nеuymin@mail.ru>a.nеuymin@mail.ru</a></p>
                         </section>
-                        <section class="section-main-container" id="about-me"><hr>
+                        <section class="section-main-container" id="about-me">
+                              <hr>
                               <h2>About Me</h2>
                               <p>
                                     I am a curious person interested in
                                     programming
                               </p>
                         </section>
-                        <section class="section-main-container" id="skills"><hr>
+                        <section class="section-main-container" id="skills">
+                              <hr>
                               <h2>Skills</h2>
                               <p>JavaScript, Node.js, HTML, CSS, Bootstrap</p>
                         </section>
- 
-                        <section class="section-main-container" id="work"><hr>
+
+                        <section class="section-main-container" id="work">
+                              <hr>
                               <h2>Work experience</h2>
                               <p>No work experience</p>
                         </section>
-                        <section class="section-main-container" id="education"><hr>
+                        <section class="section-main-container" id="education">
+                              <hr>
                               <h2>Education</h2>
                               <p>High school and university</p>
                         </section>
-                        <section class="section-main-container" id="english"><hr>
+                        <section class="section-main-container" id="english">
+                              <hr>
                               <h2>English language level</h2>
                               <p>А1. Breakthrough or beginner</p>
                         </section>
-                        <section class="section-main-container" id="code"><hr>
+                        <section class="section-main-container" id="code">
+                              <hr>
                               <h2>Code examples</h2>
                               <pre><code>
 const copy = async () => {
@@ -138,5 +153,6 @@ const copy = async () => {
                         </div>
                   </div>
             </footer>
-      </body>
+</body>
+
 </html>
