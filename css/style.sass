@@ -1,0 +1,173 @@
+html
+  scroll-behavior: smooth
+
+body
+  font-family: "Roboto", sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 20px
+  color: #000000
+  @media only screen  and (max-width: 683px)
+    font-size: 14px
+
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+a[href^="tel:"],a[href^="mailto:"],a[href^="https://t.me"]
+  padding: 19px
+  font-size: 14px
+  line-height: 32px
+  text-decoration: none
+  color: #ffffff
+
+h1, h2, h3
+  line-height: 1.5rem
+  color: #054276
+
+ol, ul
+  @media only screen  and (max-width: 683px)
+    padding-inline-start: 10px
+
+.container
+  position: relative
+  max-width: 992px
+  margin: 0 auto
+  @media only screen and (min-width: 971px) and (max-width: 1200px)
+    max-width: 970px
+  @media only screen and (min-width: 769px) and (max-width: 992px)
+    max-width: 768px
+  @media only screen and (min-width: 576px) and (max-width: 767px)
+    max-width: none
+
+.header
+  background: #054276
+  margin: 0 auto
+  .menu
+    position: relative
+    &__body
+      position: relative
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 60%
+      height: 50px
+      left: 35%
+      font-size: 12px
+      @media only screen  and (max-width: 683px)
+        height: 5px
+    &__link
+      width: 100px
+      height: 20px
+      text-align: center
+      :hover
+        font-weight: 700
+      @media only screen  and (max-width: 683px)
+        display: none
+    &__a
+      color: #ffffff
+
+.top-body
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  top: 2px
+  min-height: 300px
+  @media only screen and (max-width:683px)
+    flex-direction: column-reverse
+  .aside
+    min-height: 300px
+    background: #054276
+    color: #ffffff
+    @media only screen and (max-width:683px)
+      min-height: 0
+    &__title
+      height: 30px
+      background: #08345d
+      font-weight: 700
+      font-size: 14px
+      text-align: center
+      padding: 6px
+      margin-bottom: 10px
+  &__container
+    padding: 20px
+    .title-section
+      &__li
+        margin: 5px 0
+      &__li_none
+        list-style: none
+
+  .contacts, .skills
+    position: relative
+    &__items
+      @media only screen and (max-width:683px)
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin-bottom: 10px
+    &__item
+      height: 30px
+      margin: 0px 15px
+      display: flex
+      align-items: center
+      progress
+        position: absolute
+        width: 70px
+        left: 100px
+        margin: 0 15px
+        @media only screen and (max-width:683px)
+          position: relative
+          left: 0
+
+
+.work-body
+  padding: 10px
+  &__brandwrapper
+    display: flex
+    justify-content: flex-start
+    @media only screen and (max-width:683px)
+      flex-wrap: wrap
+  &__brand
+    margin: 0px 10px
+    font-size: .7rem
+    border: 1px solid #08345d
+    border-radius: 3px
+    padding: 0 10px
+    color: #ffffff
+    @media only screen and (max-width:683px)
+      margin: 5px 10px
+  &__li
+    list-style: disc
+    margin: 5px 0
+  &__p
+    line-height: 1.5rem
+    text-align: justify
+
+.footer
+  &__container
+    display: flex
+    height: 50px
+    align-items: center
+    justify-content: center
+    background: #054276
+    margin: 0 auto
+  &__copyright
+    color: #ffffff
+
+.figma
+  background: #5551ff
+.sass
+  background: #cf649a
+.html
+  background: #08345d
+.bootstrap
+  background: #7633f9
+.nodejs
+  background: #026e00
+.sql
+  background: #3e6e93
+.webpack
+  background: #539ac8
